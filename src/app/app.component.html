@@ -1,5 +1,5 @@
 <!--
-  Gubis zsombor Dániel
+  Gubis Zsombor Dániel
   Szoft_II_N
   2022-11-09
  -->
@@ -7,18 +7,18 @@
  <div class="container">
   <h1>Feladat 0303</h1>
   <h2>Gyepesítés</h2>
-  <div class="gyepForm"></div>
-    <div class="mb-3"></div>
+  <div class="gyepForm">
+    <div class="mb-3">
       <label for="" class="form-label"></label>
-      <input type="text" class="form-control" [(ngModel)]="diameter">
- </div>
-
- <div class="container">
-   <div class="mb-3">
-  <button class="btn btn-info" (click)="calcArea">Calculate</button>
-  <br>
-  <label for="result"></label>
-  <input type="text" class="form-control">
+      <input type="text" class="form-control"
+      [(ngModel)]="diameter">
+    </div>
+    <button class="btn btn-info"
+    (click)="calcArea()">Számít</button>
+    <div class="mb-3">
+      <label for="result">Ennyibe kerül (Ft)</label>
+      <input type="text" class="form-control"
+      [(ngModel)]="price">
+    </div>
   </div>
  </div>
-
